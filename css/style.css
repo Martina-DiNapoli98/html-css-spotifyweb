@@ -100,9 +100,7 @@ a:hover{
     
     }
 
-    a:hover{
-    color: white;
-    }
+    
 
     h3{
         color: white;
@@ -115,6 +113,10 @@ a:hover{
         color: grey;
     }
 }
+a{
+    color: white;
+    }
+
 
 .row{
     display: flex;
@@ -190,7 +192,9 @@ a:hover{
     .fa-solid{
         font-size: 60px;
         color: grey;
-        
+    }
+    .fa-solid:hover{
+        color: white;
     }
    }
  
@@ -223,6 +227,11 @@ a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
+}
+
+.position:hover .play{
+    display: block;
 }
 
 
