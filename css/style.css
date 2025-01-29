@@ -78,6 +78,7 @@ a:hover{
     background-color: #141922;
     overflow-y: auto;
     width: 100%;
+    height: calc(100vh - 70px -90px);
 
     ul{
         display: flex;
