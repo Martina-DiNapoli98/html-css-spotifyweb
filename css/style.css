@@ -9,14 +9,12 @@
 
 .top{
     display: flex;
+    height: calc(100vh - 90px);
 }
 
 
 
-.bottom{
-    background-color:#282828;
-    height: 100px;
-}
+
 
 
 .logo{
@@ -38,6 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 
     li{
         padding:5px 7px;
@@ -67,6 +66,7 @@
 
 a:hover{
     color: white;
+    
 } 
 .display-none{
     display: none;
@@ -76,7 +76,6 @@ a:hover{
 .main{
     
     background-color: #141922;
-    height: calc(150vh - 180px);
     overflow-y: auto;
     width: 100%;
 
@@ -96,8 +95,7 @@ a:hover{
     a{
     color: rgb(215, 200, 200);
     text-decoration: none;
-    padding: 10px;
-    margin: 20px;
+    
     }
 
     a:hover{
@@ -124,13 +122,16 @@ a:hover{
 
 .col{
     width: calc(100% / 12 * 6);
+    position: relative;
 }
 
 [class^="col"]{
     padding: 10px;
 
 }
-
+.foto{
+    border-radius: 50%;
+}
 .title{
         
     color: white;
@@ -141,6 +142,77 @@ a:hover{
 .sub{
     color: grey;
 }
+
+
+.bottom{
+    background-color:#282828;
+    height: 90px;
+
+    ul{
+        
+        list-style: none;
+        align-items: center;
+        
+    }
+    li{
+        padding: 0 5px;
+         strong{
+            margin-left: 5px;
+            color: white;
+            font-size: 10px;
+        }
+
+        .fa-regular{
+            color: grey;
+            font-size: 10px;
+        }
+    }
+
+    .fa-solid{
+        color: grey;
+        padding:10px;
+    }
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+  
+
+    
+   /*  .fa-solid{
+        position: absolute;
+        font-size: 40px;
+        right: 60px;
+        top: 65px;
+        color: grey;
+        
+    }
+ */
+.brano{
+    display: flex;
+    align-items: center;
+}
+
+.card-album{
+
+
+    .nome{
+        color: grey;
+        font-size: 10px;
+        margin-left: 5px;
+        }
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
@@ -182,6 +254,7 @@ a:hover{
             text-decoration: none;
             color: rgb(185, 182, 182);
             font-size: 10px;
+            padding: 3px;
         }
 
       
