@@ -54,6 +54,7 @@
     padding: 30px;
     text-align: end;
     height: 70px;
+    position: sticky;
 
     a{
         color: rgb(215, 200, 200);
@@ -78,7 +79,7 @@ a:hover{
     background-color: #141922;
     overflow-y: auto;
     width: 100%;
-    height: calc(100vh - 70px -90px);
+    height: calc(100vh - 70px - 90px);
 
     ul{
         display: flex;
@@ -185,15 +186,17 @@ a:hover{
   
 
     
-   /*  .fa-solid{
+   .card{
+    .fa-solid{
         position: absolute;
         font-size: 40px;
-        right: 60px;
-        top: 65px;
+        right: 120px;
+        top: 120px;
         color: grey;
         
     }
- */
+   }
+ 
 .brano{
     display: flex;
     align-items: center;
