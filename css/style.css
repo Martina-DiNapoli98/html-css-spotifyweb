@@ -388,13 +388,6 @@ a{
 
 
 
-
-
-
-
-
-
-
 /* MEDIA QUERY */
 
 /* media s */
@@ -448,9 +441,26 @@ a{
         .display-none{
             display: inline-block;
         }
-        
 
-}
+        .scrollbar{
+            height: 200px;
+        }
+        .sider-bottom{
+            min-height: 100px;
+        }
+        .player-bottom{
+            justify-content: center;
+          }
+
+          .volume{
+            padding-right: 20px;
+    
+        }
+
+        .scrollbar{
+            overflow-y: auto;
+        }
+    }
 
 
 /* section md */
@@ -484,11 +494,15 @@ a{
         
     }
 
-  
+  .player-bottom{
+    justify-content: center;
+  }
 
+    .volume{
+        padding-right: 20px;
 
-
-    
+    }
+ 
 }
 
 
@@ -517,6 +531,11 @@ a{
     }
     .col{
         width: calc(100% / 12 * 2);
+    }
+
+    .volume{
+        padding-right: 30px;
+
     }
 }
 
