@@ -328,9 +328,11 @@ a{
     height: 1px;
     width: 90px;
     border-top: 2px solid white;
-    padding-left: 5px;
+    padding-left: 5px;   
 
-    
+    &:hover{
+        border-top: 2px solid yellow;
+    }
 }
 .line-2{
     height: 1px;
@@ -371,13 +373,19 @@ a{
 .volume-line{
     
     width: 20px;
-    border-top: 2px solid white;
+    border-top: 2px solid white; 
+    
+    &:hover{
+        border-top: 2px solid yellow;
+    }
 }
 
 .volume-line-2{
     width: 40px;
     border-top: 2px solid grey;
     margin-right: 2px;
+
+   
 }
 
 
@@ -501,6 +509,9 @@ a{
     .volume{
         padding-right: 20px;
 
+    }
+    .yellow{
+        border-left: 2px solid yellow;
     }
  
 }
