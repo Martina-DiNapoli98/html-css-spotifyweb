@@ -53,7 +53,7 @@
     display: none;
 }
 
-
+/* END SIDEBAR */
 
 
 
@@ -78,6 +78,7 @@
     }
 }
 
+/* END UPGRADE */
 
 
 
@@ -132,19 +133,17 @@
     .yellow-line::after{
         content: "";
         background-color: yellow;
-        width: 45px;
+        width: 35px;
         height: 3px;
         position: absolute;
-        top: 30px;
+        top: 25px;
         left: 35px;
-    
     }
 
    .position{
     position: relative;
     }  
 
-    
     .play{
     position: absolute;
     top: 0;
@@ -153,7 +152,6 @@
     display: none;
     width: 100%;
     height: 100%;  
-
 
 }
 .round img{
@@ -168,25 +166,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 }   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* END MAIN */
 
 
     /* UTILITIES */
@@ -234,7 +217,7 @@
 }
 
 
-
+/* END UTILITIES */
 
 
 /* BOTTOM */
@@ -348,6 +331,15 @@
 .player-bottom{
     display: flex;
     align-items: center;
+
+    .fa-solid{
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .fa-solid:hover{
+        color: yellow;
+    }
 }
 
 .line{
@@ -416,7 +408,7 @@
 }
 
 
-
+/* END BOTTOM */
 
 
 
@@ -427,9 +419,12 @@
 
 /* media s */
 @media screen and (min-width:640px) {
+
+    /* SIDEBAR */
     .sidebar{
         min-width: 100px;
         }
+        /* MAIN */
         .main{
             width: calc(100vw - 100px);
         }
@@ -442,6 +437,7 @@
             display: block;
         }
 
+        /* UPGRADE */
         .upgrade{
             a{
 
@@ -479,6 +475,7 @@
 
         .scrollbar{
             height: 200px;
+            overflow-y: auto;
         }
         .sider-bottom{
             min-height: 100px;
@@ -492,21 +489,21 @@
     
         }
 
-        .scrollbar{
-            overflow-y: auto;
-        }
     }
 
 
 /* section md */
 
 @media screen and (min-width:878px) {
+
+    /* SIDEBAR */
     .sidebar{
         width:120px ;
         a{
             padding: 7px;
         }
     }
+    /* MAIN */
     .main{
         width: calc(100vw - 120px );
 
@@ -529,6 +526,7 @@
         
     }
 
+    /* BOTTOM */
   .player-bottom{
     justify-content: center;
   }
@@ -541,12 +539,24 @@
         border-left: 2px solid yellow;
     }
  
+    .player-bottom{
+        
+        .line{
+            width: 150px;
+            
+        }
+
+        .line-2{
+            width: 200px;
+        }
+    }
 }
 
 
 /* section lg */
 @media screen and (min-width: 1440px) {
 
+    /* SIDEBAR */
     .sidebar{
         width: 140px;
 
@@ -555,6 +565,8 @@
             padding: 10px;
         }
     }
+
+    /* MAIN */
     .main{
         width: calc(100vw - 140px);
 
@@ -571,9 +583,23 @@
         width: calc(100% / 12 * 2);
     }
 
+    /* BOTTOM */
     .volume{
         padding-right: 30px;
 
+    }
+
+    .player-bottom{
+        
+        .line{
+            width: 150px;
+            
+        }
+
+        .line-2{
+            text-align: center;
+           
+        }
     }
 }
 
